@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Berit Stange - Portfolio</title>
+    <title>Berit Stange - Contact</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <nav  class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
                     </li>
                     <li role="presentation">
                         <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
@@ -23,7 +23,7 @@
                         <a href="work.html" role="menuitem" class="navigation-list__item ">Work</a>
                     </li>
                     <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
                     </li>
                     <li role="presentation">
                         <a href="mosaic.html" role="menuitem" class="navigation-list__item">Mosaic</a>
@@ -31,19 +31,45 @@
                 </ul>
             </nav>
         </header>
-        <main class="profile">
-                <img src="img/berit_stange.png" class="profile__portrait" alt="Berit Stange Portrait">
-            <div class="profile__text ">
-                <h1>Hello World!</h1>
-                <p>My name is Berit Stange. I am a web developer from Berlin</p>
-                <a href="work.html">Check out some of my code and my projects!</a><br>
+        <main class="main-content">
+            <div>
+                <h1>Contact</h1>
+                <div>
+                  Berit Stange<br>
+                  Strasse 00<br>
+                  10000 Berlin<br>
+                  Deutschland<br>
+                  <br>
+                  Tel <a href="tel:+49000000">+49 000 000</a><br>
+                  Skype <a href="skype:berit.stange"> berit.stange</a><br>
+                  <a href="mailto:hello@berit.stange.de">hello@berit.stange.de</a><br>
+                    <!--  button for later-->
+                  <a href="mailto:hello@berit.stange.de">Contact me</a>
+                </div>
+                <form action="" method="post" id="contact-form">
+                    <label for="contact-email" class="standard-label">Email:*</label><br>
+                    <input type="email" id="contact-email" required><br>
+
+                    <label for="contact-phone" class="standard-label">Telephone:</label><br>
+                    <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+
+                    <label for="contact-message" class="standard-label">Message:* (max. 240 characters)</label><br>
+                    <textarea maxlength="240" id="contact-message" required></textarea><br>
+
+                    <input type="submit" value="Send Message"><br>
+                    <p>*required</p>
+                </form>
+                <a href="about.html">Default Link ABOUT ME</a>
                 <button type="button">Default Button</button>
                 <button class="button__secondary">Secondary Button</button>
+            </div>
+            <div>
+                <div class="element1"></div>
             </div>
         </main>
         <footer class="page-footer">
             <p>Find me on</p>
-            <div class="social-media">
+            <div>
               <!-- Github logo -->
               <img src="img/icon-github.svg" alt="github">
               <!-- Twitter logo -->

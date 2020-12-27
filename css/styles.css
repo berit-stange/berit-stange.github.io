@@ -1,0 +1,321 @@
+:root {
+  --primary-color: #e66771;
+  --secondary-color: gainsboro;
+  --dark-color: #002238;
+  --font-sans: 'Karla', sans-serif; 
+  --font-serif: 'Lora', serif; 
+  --font-big: 60px;  
+  --font-medium: 30px;  
+  --font-small: 15px;
+  --font-heavy: 700;
+  --font-light: 400;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: var(--font-light);
+  font-size: var(--font-small);
+  line-height: 1.6;
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size:  var(--font-big);
+  font-weight: var(--font-heavy);
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: var(--font-medium);
+  font-weight: var(--font-heavy);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-family: var(--font-serif);
+  font-size: var(--font-small);
+  font-weight: var(--font-heavy);
+  color: var(--primary-color);
+}
+
+div {
+  padding: 10px; 
+  margin: 10px; 
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--secondary-color);
+}
+
+button,
+.button  {
+  /* overwrites browser defaults and resets the border ---------------2020.12.15*/
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+button:hover, 
+button:focus,
+.button:hover,
+.button:focus  {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  color: var(--dark-color);
+}
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+
+/* -------------------------------2020-12-12----*/
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
+/*  padding-bottom: 0px;  */
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  position: relative;*/
+/*  top: 60px;*/
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile__text {
+    flex: 1 1 100px;
+}
+
+.profile__text p {
+    font-size: var(--font-medium);
+}
+
+.page-header a {
+    color: var(--dark-color);
+}
+
+.page-header {
+  background-color: var(--secondary-color);
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgba(218, 165, 32, 0.5); 
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+/*    min-height: 100vh;*/
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+/*    position: relative;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+    width: 100%;
+}
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+
+/* ---------------start grid fallback */
+
+.grid__item {
+     display: inline-block;
+     width: 33%;
+}
+/* ---------------end grid fallback */
+
+
+/* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+@supports (display: grid) {
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 20px;
+     margin: 0;
+ }
+ .grid__item {
+     background-color: var(--secondary-color);
+     color: var(--dark-color);
+     width: auto;
+     min-height: auto;
+     margin: 0;
+ }
+ .grid__item:last-child {
+     grid-column: 3 / 3;
+     grid-row: 1 / 3;
+ }
+}
+
+/* ------------------------------------center content about.html----*/
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-content__table{
+    margin: 0 auto;
+}
+
+
+/* -----------------------------------------------------2020-12-15 media queries ----*/
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*shared code*/
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: var(--font-medium);
+  }
+}
+
+
+/* ------------------------------------animations----*/
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: 40s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 50s cloud-move-reverse infinite alternate linear;
+}
+
+/* ----------------------2020-12-27 https://css-tricks.com/almanac/properties/a/animation/----*/
+.element1 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  animation-name: stretch;
+  animation-duration: 3s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: var(--secondary-color);
+  }
+}

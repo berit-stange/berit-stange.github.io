@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Berit Stange - Portfolio</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/mosaic.production.css">
 </head>
 <body>
         <header class="page-header">
@@ -14,7 +15,7 @@
             <nav  class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                        <a href="index.html" role="menuitem" class="navigation-list__item ">Home</a>
                     </li>
                     <li role="presentation">
                         <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
@@ -26,21 +27,31 @@
                         <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                     </li>
                     <li role="presentation">
-                        <a href="mosaic.html" role="menuitem" class="navigation-list__item">Mosaic</a>
+                        <a href="mosaic.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Mosaic</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="profile">
-                <img src="img/berit_stange.png" class="profile__portrait" alt="Berit Stange Portrait">
-            <div class="profile__text ">
-                <h1>Hello World!</h1>
-                <p>My name is Berit Stange. I am a web developer from Berlin</p>
-                <a href="work.html">Check out some of my code and my projects!</a><br>
-                <button type="button">Default Button</button>
-                <button class="button__secondary">Secondary Button</button>
+        <main class="main-content">
+            <h1>Mosaic</h1>
+            <div class="mosaic-content">
+               <p>This page was made to practise grid. It's really cool but I am not done making the media queries. </p>
+                <div class="mosaic-portfolio">
+                    <div class="mosaic-item medium">one</div>
+                    <div class="mosaic-item large">two</div>
+                    <div class="mosaic-item medium">three</div>
+                    <div class="mosaic-item small">four</div>
+                    <div class="mosaic-item tall">five</div>
+                    <div class="mosaic-item wide">six</div>
+                    <div class="mosaic-item medium">one</div>
+                    <div class="mosaic-item large">two</div>
+                    <div class="mosaic-item medium">three</div>
+                    <div class="mosaic-item small">four</div>
+                    <div class="mosaic-item tall">five</div>
+                    <div class="mosaic-item wide">six</div>
+                </div>
             </div>
-        </main>
+        </main> 
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">
