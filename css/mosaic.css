@@ -1,94 +1,74 @@
-:root {
-  --primary-color: #e66771;
-  --secondary-color: gainsboro;
-  --dark-color: #002238;
-  --font-sans: 'Karla', sans-serif; 
-  --font-serif: 'Lora', serif; 
-  --font-big: 60px;  
-  --font-medium: 30px;  
-  --font-small: 15px;
-  --font-heavy: 700;
-  --font-light: 400;  
-}
 
-/* ===================*/
-/* Main Content area */
-/* ===================*/
-
-.mosaic-content{
-/*    flex: 1 1 100%;*/
-/*    min-height: 100vh;*/
-}
-
-/* ===================*/
-/* Portfolio */
-/* ===================*/
 
 .mosaic-portfolio {
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   height: 100%;
 }
 
 .mosaic-item {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--base-color);
   font-weight: var(--font-light);
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  font-size: 2em;
+  font-size: var(--font-big);
   padding: 30px;
-/*    width: 100px;*/
-/*  background-size: cover;*/
-/*  background-position: top left;*/
-/*  transition: all ease-in-out 300ms;*/
-/*  position: relative;*/
-/*  z-index: 10;*/
-    transition: 0.5s background-color;
-    transition: 0.5s color;
+  transition: 0.5s background-color;
+  transition: 0.5s color;
 }
+
 .mosaic-item:hover {
-  background-color: var(--primary-color);
-  color: var(--dark-color);
-    
-}
-  .small {
-    grid-row: span 1;
-    grid-column: span 1;
-  }
-  
-  .medium {
-   grid-row: span 2;
-    grid-column: span 2;
-  }
-  
-  .large {
-    grid-row: span 3;
-    grid-column: span 3;
-  }
-  
-  .tall {
-    grid-row: span 3;
-    grid-column: span 2;
-  }
-  
-  .wide {
-    grid-row: span 2;
-    grid-column: span 3;
-  }
-    
-.page-footer {
-    clear: both;
-    width: 100%;
-    display: flex;
-/*    min-height: 100vh;*/
-    flex-direction: column;
-    text-align: center;
+  background-color: var(--accent-color);
+  color: var(--base-color);
 }
 
+.mosaic-item a {
+  font-size: var(--font-small);
+}
 
+.mosaic-item:hover a,
+.mosaic-item:hover h2 {
+  color: var(--base-color);
+}
+
+.mosaic-item div {
+  font-size: var(--font-small);
+  margin: 0px;
+    padding: 0px;
+}
+
+div  {
+  font-size: var(--font-small);
+  margin: 10px;
+    padding: 10px;
+}
+
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.large {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.tall {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.wide {
+  grid-row: span 2;
+  grid-column: span 3;
+}
 
 @media all and (max-width: 500px) {
   .mosaic-portfolio {
@@ -139,10 +119,7 @@
   .mosaic-portfolio {
     grid-gap: 10px;
   }
-  .mosaic-item:last-child {
-/*    grid-column: auto / auto;*/
-/*    grid-row: auto / auto;*/
-  }
+  
   h1 {
     font-size: var(--font-medium);
   }
