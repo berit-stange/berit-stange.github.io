@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
   --primary-color: #e66771;
   --secondary-color: gainsboro;
@@ -147,3 +148,132 @@
     font-size: var(--font-medium);
   }
 }
+=======
+
+
+.mosaic-portfolio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100%;
+  grid-gap: 20px;
+}
+
+.mosaic-item {
+  background-color: var(--base-color);
+  font-weight: var(--font-light);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: var(--font-big);
+  /* padding: 30px; */
+  transition: 0.5s background-color;
+  transition: 0.5s color;
+}
+
+.mosaic-item:hover {
+  background-color: var(--accent-color);
+  color: var(--base-color);
+}
+
+.mosaic-item a {
+  font-size: var(--font-small);
+}
+
+.mosaic-item:hover a,
+.mosaic-item:hover h2 {
+  color: var(--base-color);
+}
+
+.mosaic-item div {
+  font-size: var(--font-small);
+  margin: 0px;
+    padding: 0px;
+}
+
+/* div  {
+  font-size: var(--font-small);
+  margin: 10px;
+    padding: 10px;
+} */
+
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.large {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.tall {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.wide {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+@media all and (max-width: 500px) {
+  .mosaic-portfolio {
+/*    grid-template-columns: 1fr 1fr;*/
+      
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .mosaic-portfolio {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;  
+  }
+   .small{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-row: auto;
+    grid-column: auto;
+  }
+  
+  .medium {
+   grid-template-columns: 2fr; 
+   grid-template-rows: 2fr;   
+   grid-row: auto;
+    grid-column: auto;
+  }
+  
+  .large {
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-row: auto;
+    grid-column: auto;
+  }
+    .tall {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  
+  .wide {
+    grid-row: auto;
+    grid-column: auto;
+  }
+    
+}
+/*shared code*/
+@media all and (max-width: 750px) {
+  .mosaic-portfolio {
+    grid-gap: 10px;
+  }
+  
+  h1 {
+    font-size: var(--font-medium);
+  }
+}
+>>>>>>> Stashed changes
