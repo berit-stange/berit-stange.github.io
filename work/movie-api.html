@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berit Stange - Movie API</title>
+    <link rel="icon" type="image/png" href="../img/favicon-32x32-blue.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lora:wght@700&display=swap"
+        rel="stylesheet">
+    <!--    <link rel="stylesheet" type="text/css" href="../css/styles.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/styles-light.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="wide">
+            <a href="../index.html" class="page-header__item logo">BERIT STANGE</a>
+        </div>
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <!-- <li role="presentation">
+                    <a href="../index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li> -->
+                <li role="presentation">
+                    <a href="../about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="../work.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="../contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="case-study">
+        <div class="case-study-container">
+
+            <h1>Movie API</h1>
+            <!-- <h2 class="subtitle">Case Study</h2> -->
+
+            <!-- BEGINNING: INTRODUCTION, PROBLEM + SOLUTION -->
+
+            <div class="case-study-section">
+                <h3>Introduction</h3>
+                <p>RESTful API that fetches data about movies, directors, and genres from a MongoDB database,
+                    making HTTP requests to the server.<br>
+                </p>
+            </div>
+
+            <!-- LARGE GIF -->
+            <!-- <div class="case-study-section-img-full">
+                <img src="../img/my-movies-app-in-use-2.gif" alt="" class="work-img">
+                <p class="case-study-caption">myMovies App in use</p>
+            </div> -->
+
+            <div class="case-study-section">
+                <div>
+                    <h3>Objective</h3>
+                    <p>
+                        The API that fetches data from a MongoDB database was to be used in the React client side later.
+                    </p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/movie-api-01.jpg" alt="" class="work-img">
+                    <!-- <p class="case-study-caption">Screenshot of finished app (main view with movie list)</p> -->
+                </div>
+            </div>
+            <div class="case-study-section">
+                <div>
+                    <h3>Context</h3>
+                    <p>
+                        The API was part of the web development course at CareerFoundry to build skills
+                        in serverside programming.
+                    </p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/my-movies-brief-01.png" alt="" class="work-img">
+                    <p class="case-study-caption">Project brief Careerfoundry (source: Careerfoundry)</p>
+                </div>
+            </div>
+
+
+            <!-- MIDDLE PART: APPROACH + STEPS -->
+
+            <div class="case-study-section">
+                <h3>Tech Stack</h3>
+                <div>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>NPM</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                        <li>Express.js</li>
+                        <li>Heroku</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <div class="case-study-img">
+                    <h3>Key Features</h3>
+                    <!-- <img src="../img/movie-api-01.jpg" alt="" class="work-img"> -->
+                    <!-- <p class="case-study-caption">Creating the endpoints in the API</p> -->
+                </div>
+                <div>
+                    <!-- <h3>Key Features</h3> -->
+                    <ul>
+                        <li>Return a list of ALL movies to the user</li>
+                        <li>Return data about a single movie by title to the user</li>
+                        <li>Return data about a genre (description) by name/title (e.g., “Thriller”)</li>
+                        <li>Return data about a director (bio, birth year, death year) by name</li>
+                        <li>Allow new users to register</li>
+                        <li>Allow users to update their user info</li>
+                        <li>Allow users to add a movie to their list of favorites</li>
+                        <li>Allow users to remove a movie from their list of favorites</li>
+                        <li>Allow existing users to deregister</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="case-study-section">
+                <div>
+                    <h3>2. Step: Create the Components</h3>
+                    <p>
+                        
+                    </p>
+                </div>
+
+                <div class="case-study-img">
+                    <img src="../img/movie-api-01.jpg" alt="" class="work-img">
+                    <p class="case-study-caption"></p>
+                </div>
+            </div> -->
+
+            <!-- 2 SMALL IMAGES -->
+            <!-- <div class="case-study-section">
+                <div class="case-study-img">
+                    <img src="../img/meet-app-01.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Movie view with dteails about movie</p>
+                </div>
+                <div class="case-study-img">
+                    <img src="../img/meet-app-01.jpg" alt="" class="work-img">
+                    <p class="case-study-caption">Profile view with favorite movies of user and form</p>
+                </div>
+            </div> -->
+
+            <!-- LARGE IMAGE -->
+            <div class="case-study-section-img-full">
+                <img src="../img/movie-api-02.png" alt="" class="work-img">
+                <!-- <p class="case-study-caption">Profile view with favorite movies of user and form</p> -->
+            </div>
+
+            <!-- <div class="case-study-section-img-full">
+                <img src="../img/meet-app-01.jpg" alt="" class="work-img">
+                <p class="case-study-caption">Filtering the favorite movies of a user in the profile view</p>
+            </div> -->
+
+
+            <!-- END: REFLECTION + FURTHER STEPS -->
+
+            <div class="case-study-section">
+                <!-- <h3>Reflection</h3>
+                <p>
+                    
+                </p> -->
+
+                <!-- <h3>Duration + Next Steps</h3>
+                <div>
+                    <p>
+                        Both parts of the application together, the server side and the client side, took me about 2
+                        months.
+                    </p>
+                    <p>
+                        The next step will be to refactor the code using Redux Thunk, structure code differently,
+                        isolate
+                        the function. Also some work on the buttons in the profile view could be made.
+                    </p>
+                </div> -->
+            </div>
+
+            <!-- LINKS -->
+            <div class="case-study-links">
+                <h3>Link</h3>
+                <!-- <a href="https://berit-stange.github.io/meet">See Web Application |</a> -->
+                <a href="https://github.com/berit-stange/movie_api">See Code on GitHub</a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div>
+            <!-- Github logo -->
+            <img src="../img/icon-github.svg" alt="github">
+            <!-- LinkedIn logo -->
+            <img src="../img/icon-linkedin.svg" alt="linkedin">
+        </div>
+    </footer>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+</body>
+
+</html>
