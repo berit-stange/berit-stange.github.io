@@ -4,28 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
 
 :root {
-    
-/* NEW COLOR VARIABLES > "Aths Special #edeed4 & Persian Blue #1339e3" (zu grell zum lesen)  #F4F3F1 */
-  /* --base-color: #ebecd6; */
-  /* --base-color-light: #feffeb;  */
   --base-color: #e2dfd8;
   --base-color-light: #F4F3F1; 
   --dark-color: #27336b;
-  --accent-color: #1339e3;   
-    
-/* NEW COLOR VARIABLES > "Geyser & Ultramarine" (eher cool)*/
-/*
-  --base-color: #dce7e7;
-  --base-color-light: rgba(220, 231, 231, 0.5); 
-  --dark-color: #090e9e;
-  --accent-color: #090e9e;   
-*/
-    
-  /* --font-sans: 'Karla', sans-serif; */
+  --accent-color: #1339e3; 
   --font-sans: 'Montserrat', sans-serif;
-  /* --font-serif: 'Lora', serif; */
-  /* --font-headline: 'Anton', sans-serif; */
-  /* --font-headline: 'CooperHewitt-Heavy', sans-serif; */
   --font-serif: 'Roboto Slab', serif;
   --font-big: 50px;
   --font-medium: 30px;
@@ -49,7 +32,6 @@ body {
   font-size: var(--font-small);
   line-height: 1.9;
   background-color: var(--base-color-light);
-/*  background-color: var(--base-color);*/
   color: var(--dark-color);
 /*  margin: 0;*/
   text-decoration: none;
@@ -81,7 +63,7 @@ h2 {
 
 h3 {
   font-family: var(--font-serif);
-  font-size: var(--font-small);
+  font-size: var(--font-medium);
   font-weight: var(--font-heavy);
   color: var(--accent-color);
 }
@@ -183,11 +165,6 @@ input {
       text-decoration: none;
   }
 
-/* .page-header-container {
-   background-color: var(--base-color);
-   width: 100%;
-} */
-
 .page-header {
   background-color: var(--base-color-light);
   display: flex;
@@ -250,18 +227,18 @@ input {
 
   .grid__item {
     height: 100%;
-    margin: 0;
+    margin: 0px;
     padding: 20px;
     width: auto;
   }
-    
+
   .grid__item h2, 
   .grid__item a, 
   .grid__item p{
     padding: 5px;
     text-decoration: none;
   }
-    
+
   .grid a{
     text-decoration: none;
   }
@@ -269,7 +246,7 @@ input {
   .grid p {
     font-weight: var(--font-heavy);
   }
-    
+
   .grid__item:hover h2, 
   .grid__item:hover a, 
   .grid__item:hover p{
@@ -277,9 +254,16 @@ input {
     text-decoration: none;
   }
 
-  .grid__item:last-child {
+  /* class instead of first child - more flexible */
+  .grid__item-high {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
+  }
+
+  /* class instead of first child - more flexible */
+  .grid__item-wide {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
 
   .grid__item:hover {
@@ -287,7 +271,6 @@ input {
     color: var(--base-color);
     width: auto;
     min-height: auto;
-    margin: 0;
     cursor: pointer;
   }
 

@@ -306,6 +306,7 @@
     -o-transition: 0.5s color;
     transition: 0.5s color;
 }
+
 .mosaic-item:hover {
   background-color: #e66771;
   color: #002238;
@@ -345,21 +346,6 @@
     -ms-grid-column-span: 3;
     grid-column: span 3;
   }
-    
-.page-footer {
-    clear: both;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-/*    min-height: 100vh;*/
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-}
-
 
 
 @media all and (max-width: 500px) {
