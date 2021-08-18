@@ -349,9 +349,9 @@ header.page-header {
 
 /* ------------------------------------ content case study ---------------------------------- */
 
-/* .case-study {
-   padding-top: 20px;
-} */
+.case-study {
+   padding-top: 100px;
+}
 
 .case-study h1 {
     text-align: center;
