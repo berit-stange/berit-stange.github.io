@@ -14,7 +14,7 @@
   --font-medium: 30px;
   --font-small: 16px;
   --font-big-mq1: 40px;
-  --font-medium-mq1: 30px;
+  --font-medium-mq1: 20px;
   --font-small-mq1: 14px;
   --font-tiny: 12px;
   --font-heavy: 600;
@@ -443,6 +443,19 @@ input {
 /* -----------------------------------------------------2020-12-15 media queries ---- */
 @media all and (max-width: 500px) {
   /* --------------- grid fallback */
+
+.profile {
+  padding: 150px 20px 10px 20px;
+}
+
+.profile h1 {
+text-align: left;
+}
+
+.profile p {
+  font-size: var(--font-medium-mq1);
+}
+  
 .grid__item {
   display: inline-block;
   width: 100%;
@@ -472,22 +485,40 @@ input {
     grid-template-columns: 1fr;
   }
 
+  .grid__item-high,
+  .grid__item-wide {
+    grid-column: 1/1;
+  }
+
   .page-header {
     display: block;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
  } 
   .page-header__item {
      flex: 1;
   }
 
-  .navigation-list, 
-  ul,
-  .navigation-list li {
-    text-align: center;
-    margin-left: 0px;
-    padding: 10px;
+  .navigation-list,
+  .navigation-list ul,
+  .navigation-list li 
+  {
+    margin: 0px;
   }
+
+.navigation-list {
+  display: flex;
+  justify-content:space-evenly;
+  padding: 10px;
+}
+
+.table-section {
+  max-width: 100%;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
 
   .profile__portrait {
     margin: 0 auto;
@@ -495,7 +526,8 @@ input {
     width: 200px;
   }
 
-  .about-me-section p {
+  .about-me-section p,
+  .about-me-section h2 {
     padding: 0px;
   }
 
@@ -512,7 +544,7 @@ input {
 
   .page-header {
     display: block;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
  } 
   .page-header__item {
