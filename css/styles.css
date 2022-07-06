@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e66771;
   --secondary-color: gainsboro;
+  /* --secondary-color: rgb(240, 240, 240); */
   --dark-color: #002238;
   --font-sans: 'Karla', sans-serif;
   --font-serif: 'Lora', serif;
@@ -120,9 +121,9 @@ button:focus,
   max-width: 900px;
   margin: 0 auto;
   min-height: 80vh;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile__text {
@@ -135,13 +136,13 @@ button:focus,
 
 .logo {
   /*    width: 250px;*/
-      color: var(--dark-color);
-      font-family: var(--font-serif);
-      /* font-size: var(--font-medium); */
-      font-size: 20px;
-      font-weight: var(--font-heavy);
-      text-decoration: none;
-  }
+  color: var(--dark-color);
+  font-family: var(--font-serif);
+  /* font-size: var(--font-medium); */
+  font-size: 20px;
+  font-weight: var(--font-heavy);
+  text-decoration: none;
+}
 
 .page-header a {
   color: var(--dark-color);
@@ -256,12 +257,13 @@ button:focus,
 } */
 
 .work-img {
-/*  width: 100%;*/
-    padding-right: 10px;
+  /*  width: 100%;*/
+  padding-right: 10px;
 }
+
 /* ------------------------------------ content case study---- */
 .case-study-content p {
-  text-align: left; 
+  text-align: left;
 }
 
 
@@ -329,57 +331,57 @@ button:focus,
 /* creative link effects 2021-01-22 */
 /* Effect 21: borders slight translate */
 .cl-effect-21 a {
-	padding: 10px;
-	color: #237546;
-	font-weight: 700;
-	text-shadow: none;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
+  padding: 10px;
+  color: #237546;
+  font-weight: 700;
+  text-shadow: none;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .cl-effect-21 a::before,
 .cl-effect-21 a::after {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .cl-effect-21 a::before {
-	top: 0;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .cl-effect-21 a::after {
-	bottom: 0;
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	transform: translateY(10px);
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 .cl-effect-21 a:hover,
 .cl-effect-21 a:focus {
-	color: #fff;
+  color: #fff;
 }
 
 .cl-effect-21 a:hover::before,
 .cl-effect-21 a:focus::before,
 .cl-effect-21 a:hover::after,
 .cl-effect-21 a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	transform: translateY(0px);
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 }
