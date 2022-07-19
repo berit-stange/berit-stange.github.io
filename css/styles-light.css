@@ -509,13 +509,11 @@ input {
     .grid__item-high {
       grid-column: 1 / 1;
       grid-row: 1 / 1;
-      /* grid-template-rows: 1fr; */
     }
 
     .grid__item-high-2 {
       grid-column: 1 / 1;
       grid-row: 3 / 3;
-      /* grid-template-rows: 1fr; */
     }
 
     .grid__item-wide {
@@ -569,6 +567,7 @@ input {
   @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
       grid-template-columns: 1fr 1fr;
+      padding: 20px;
     }
 
     .grid__item {
@@ -579,7 +578,12 @@ input {
 
     .grid__item-high {
       grid-column: 1 / 1;
-      grid-row: 3 / 3;
+      grid-row: 1 / 1;
+    }
+
+    .grid__item-high-2 {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
     }
 
     .grid__item-wide {
