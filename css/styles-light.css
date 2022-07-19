@@ -474,6 +474,7 @@ input {
     }
 
     /* --------------- grid fallback */
+
     .grid__item {
       display: inline-block;
       width: 100%;
@@ -483,6 +484,7 @@ input {
 
     .grid {
       grid-template-columns: 1fr;
+      padding: 20px;
     }
 
     body,
@@ -506,7 +508,14 @@ input {
 
     .grid__item-high {
       grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      /* grid-template-rows: 1fr; */
+    }
+
+    .grid__item-high-2 {
+      grid-column: 1 / 1;
       grid-row: 3 / 3;
+      /* grid-template-rows: 1fr; */
     }
 
     .grid__item-wide {
