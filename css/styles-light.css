@@ -8,7 +8,7 @@
   /* --base-color-light: #F4F3F1;  */
   --base-color-light: #fffefd;
   --dark-color: #27336b;
-  --accent-color: #790054;
+  --accent-color: #5c0c3d;
   /* --accent-color: #1339e3;  */
   --font-sans: 'Montserrat', sans-serif;
   --font-serif: 'Roboto Slab', serif;
@@ -52,7 +52,7 @@ h2 {
   font-family: var(--font-serif);
   font-size: var(--font-medium);
   /* font-weight: var(--font-heavy); */
-  color: var(--accent-color);
+  color: var(--dark-color);
   /*  margin: 0;*/
 }
 
@@ -279,6 +279,7 @@ input {
 
   .grid__item:hover {
     background-color: var(--accent-color);
+    /* opacity: 80%; */
     color: var(--base-color);
     width: auto;
     min-height: auto;
