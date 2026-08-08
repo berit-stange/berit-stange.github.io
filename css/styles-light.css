@@ -67,7 +67,7 @@ h3 {
   font-family: var(--font-serif);
   font-size: var(--font-medium);
   font-weight: var(--font-heavy);
-  color: var(--accent-color);
+  color: var(--dark-color);
 }
 
 a {
@@ -338,7 +338,7 @@ input {
   }
 
   .bg-image-work-05 {
-    background-image: url();
+    background-image: url(../img/stange-design-sw.jpg);
   }
 
   .bg-image-work-06 {
@@ -346,7 +346,7 @@ input {
   }
 
   .bg-image-work-07 {
-    background-image: url(../img/limoncello-index-sw2.jpg);
+    background-image: url(../img/amelie-index-sw.jpg);
   }
 
   .bg-image-work-08 {
