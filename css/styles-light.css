@@ -213,6 +213,11 @@ input {
   width: 100%;
 }
 
+footer img {
+  width: 30px;
+  height: auto;
+}
+
 /* ---------------start grid fallback */
 
 .grid__item {
